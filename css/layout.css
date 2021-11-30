@@ -107,9 +107,6 @@ footer p{
     display: none;
 }
 @media (max-width:750px) {
-    header nav{
-        display: none;
-    }
     .nav_btn{
         display: block;
     }
@@ -131,5 +128,24 @@ footer p{
         background-color: #448426;
         box-shadow: 0px 10px 0px #448426,
                     0px -10px 0px #448426;
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        top: 100px;
+        left: -80%;
+        background-color: #CDDDAC;
+        width: 70%;
+        height: 70vh;
+        text-align: center;
+        transition: .5s;
+    }
+    header nav ul li{
+        margin-top: 10px;
+    }
+    #nav_control:checked ~ header nav ul{
+        left: 0%;
     }
 }
