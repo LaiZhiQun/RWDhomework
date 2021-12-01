@@ -51,7 +51,99 @@ h1{
 }
 /*main*/
 
+/*swiper*/
+html,
+body {
+  position: relative;
+  height: 100%;
+}
 
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-wrapper .swiper-slide p{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+/*section*/
+section{
+    max-width: 800px;
+    margin: 0 auto;
+}
+h2{
+    margin-top: 50px;
+    text-align: start;
+    font-size: 30px;
+}
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+h3{
+    color: red;
+    font-size: 24px;
+    margin-top: 20px;
+    padding: 5px;
+}
+h4{
+    color: rgb(30, 39, 173);
+    font-size: 24px;
+    margin-top: 20px;
+    padding: 5px;
+}
+section p{
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 5px;
+}
+hr.style-two {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
 /*footer*/
 footer{
     margin-top: 20px;
