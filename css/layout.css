@@ -50,6 +50,7 @@ h1{
     top: 0px;
 }
 /*main*/
+
 /*swiper*/
 html,
 body {
@@ -105,8 +106,47 @@ body {
     font-size: 25px;
     font-weight: bold;
 }
+/*section*/
+section{
+    max-width: 800px;
+    margin: 0 auto;
+}
+h2{
+    margin-top: 50px;
+    text-align: start;
+    font-size: 30px;
+}
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+h3{
+    color: red;
+    font-size: 24px;
+    margin-top: 20px;
+    padding: 5px;
+}
+h4{
+    color: rgb(30, 39, 173);
+    font-size: 24px;
+    margin-top: 20px;
+    padding: 5px;
+}
+section p{
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 5px;
+}
+hr.style-two {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
 /*footer*/
 footer{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,6 +198,9 @@ footer p{
     display: none;
 }
 @media (max-width:750px) {
+    main{
+        padding-top: 100px;
+    }
     .nav_btn{
         display: block;
     }
@@ -180,11 +223,17 @@ footer p{
         box-shadow: 0px 10px 0px #448426,
                     0px -10px 0px #448426;
     }
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 6;
+    }
     header nav ul{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         position: absolute;
+        z-index: 5;
         top: 100px;
         left: -80%;
         background-color: #CDDDAC;
