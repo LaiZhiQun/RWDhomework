@@ -7,6 +7,7 @@
     <title>世達藥品</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
 </head>
 <body>
     <div class="wrap">
@@ -26,7 +27,21 @@
             </nav>
         </header>
         <main>
-
+                <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/swiper1.jpg" alt="banner">
+                        <p>世達開發的宗旨：研究 + 創新</p>
+                    </div>
+                    <div class="swiper-slide"><img src="/images/swiper2.jpg" alt="banner">
+                        <p>世達製造的理想：品質 + 效率</p>
+                    </div>
+                    <div class="swiper-slide"><img src="/images/swiper3.jpg" alt="banner">
+                        <p>世達業務的精神：熱忱 + 服務</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </main>
         <footer>
             <ul class="group">
@@ -41,6 +56,7 @@
             </div>    
         </footer>
     </div>
-
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="/js/all.js"></script>
 </body>
 </html>
