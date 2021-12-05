@@ -102,6 +102,7 @@ hr.style-one {
     padding-left: 10px;
     font-size: 20px;
     font-weight: bold;
+    margin-top: 50px;
 }
 .product_list ul{
     display: flex;
@@ -127,10 +128,11 @@ table tr th{
     background-color: #44973e;
     color: white;
     text-align: center;
-    padding: 10px 0;
     vertical-align: middle;
     padding-right:5px;
     padding-left: 5px;
+    width: 120px;
+    height: 40px;
 }
 table td{
     text-align: center;
