@@ -38,10 +38,6 @@ nav ul li a:hover{
     color: rgb(8, 8, 8);
     transition: all .3s;
 }
-header nav ul li a.active{
-    border-bottom: 5px solid rgb(222, 241, 53);
-    color: rgb(8, 8, 8);
-}
 h1{
     background-image: url(/images/logo.png);
     width: 200px;
@@ -54,27 +50,19 @@ h1{
     top: 0px;
 }
 /*main*/
-main{
-    margin-top: 20px;
+
+main span{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    padding: 50px;
+    color: red;
 }
-/*info*/
-.info{
-    display: flex;
-}
-.info-input{
+main img{
+    display: block;
     margin: 0 auto;
 }
-.info-input p{
-    font-weight: bold;
-    margin: 10px 0px;
-}
-textarea{
-    width: 100%;
-}
-iframe{
-    width: 50%;
-    height: 500px;
-}
+
 /*footer*/
 footer{
     margin-top: 20px;
@@ -132,6 +120,9 @@ footer p{
     main{
         padding-top: 100px;
     }
+    main img{
+        width: 100%;
+    }
     .nav_btn{
         display: block;
     }
@@ -158,7 +149,6 @@ footer p{
         position: fixed;
         width: 100%;
         z-index: 6;
-        top: 0;
     }
     header nav ul{
         display: flex;
@@ -179,15 +169,6 @@ footer p{
     }
     #nav_control:checked ~ header nav ul{
         left: 0%;
-    }
-    .info{
-        flex-direction: column;
-    }
-    iframe{
-        padding-top: 10px;
-        width: 90%;
-        height: 300px;
-        margin: 0 auto;
     }
 }
 
